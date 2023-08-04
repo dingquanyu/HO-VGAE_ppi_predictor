@@ -53,6 +53,6 @@ $H_k^l$ with $H_{k-1}^l$ in Equation 1 and it became:
 $$H_k^l=(1-\alpha)A_{norm}H_{k}^l + \alpha H_0^l \ (3)$$
 $$H_k^l=\alpha(1-(1-\alpha)A_{norm})^{-1}H_0^l \ (4)$$
 where $H_0^0 \in R^{N \times 1024}$ is the input sequence feature matrix.
-Since $\alpha(1-(1-\alpha)A_{norm})^{-1}$ is used in every step, I calculated it beforehands and name it as matrix $Y$
+Since $\alpha(1-(1-\alpha)A_{norm})^{-1}$ is used in every step, I name it as matrix $Y$
 Thus output of $l^{th}$ HO-GCN layer is defined as:
 $$H^l = GCN(YH^{l-1}W) \ \ l\ge1 \ (5)$$ where $W$ is the trainable weight and $H^0\in R^{N \times 1024}$ is the input 
