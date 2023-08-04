@@ -46,7 +46,7 @@ approximation of infinte steps of random walk at each layer.
 At **$l^{th}$** layer, $k^{th}$ random walk equals to: 
 $$H_k^l=(1-\alpha)A_{norm}H_{k-1}^l + \alpha H_0^l \ (1)$$
 Where $\alpha\in\(0,1]$ is the possibilty of restart, $A_{norm}\in N\times N$ is the normalised adjacency matrix, obtained by:
-$$A_{norm}=D^{-\frac{1}{2}}AD^{-\frac{1}{2}} \ (2)$$ where $D\in N\times N$ is the degree matrix and $A\in n\times n$ is the adjacency matrix.
+$$A_{norm}=D^{-\frac{1}{2}}AD^{-\frac{1}{2}} \ (2)$$ where $D\in N\times N$ is the degree matrix and $A\in N\times N$ is the adjacency matrix.
 
 And since random walk converges to a Wiener process, if the number of walks is infinite, then $H_k^l$ is approximately equal to $H_{k-1}^l$ Subtitute 
 $H_k^l$ with $H_{k-1}^l$ in Equation 1 and it became:
